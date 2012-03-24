@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.rdoc"]
   s.test_files = `git ls-files -z -- test`.split("\0")
 
+  s.add_dependency('ripper-plus', ["~> 1.3.0"])
   s.add_dependency('sexp_processor', ["~> 3.0"])
 
   s.add_development_dependency('minitest', ["~> 2.11.2"])
